@@ -1,0 +1,101 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\css\\easyquery.css",
+      "PackagePath": "staticwebassets\\css\\easyquery.css"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\images\\about.svg",
+      "PackagePath": "staticwebassets\\images\\about.svg"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\images\\clear.svg",
+      "PackagePath": "staticwebassets\\images\\clear.svg"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\images\\csv.svg",
+      "PackagePath": "staticwebassets\\images\\csv.svg"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\images\\dashboard.svg",
+      "PackagePath": "staticwebassets\\images\\dashboard.svg"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\images\\excel.svg",
+      "PackagePath": "staticwebassets\\images\\excel.svg"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\images\\expand-horizontal.svg",
+      "PackagePath": "staticwebassets\\images\\expand-horizontal.svg"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\images\\expand-vertical.svg",
+      "PackagePath": "staticwebassets\\images\\expand-vertical.svg"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\images\\load.svg",
+      "PackagePath": "staticwebassets\\images\\load.svg"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\images\\new.svg",
+      "PackagePath": "staticwebassets\\images\\new.svg"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\images\\pdf.svg",
+      "PackagePath": "staticwebassets\\images\\pdf.svg"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\images\\privacy.svg",
+      "PackagePath": "staticwebassets\\images\\privacy.svg"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\images\\remove.svg",
+      "PackagePath": "staticwebassets\\images\\remove.svg"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\images\\run.svg",
+      "PackagePath": "staticwebassets\\images\\run.svg"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\images\\save-as.svg",
+      "PackagePath": "staticwebassets\\images\\save-as.svg"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\images\\save.svg",
+      "PackagePath": "staticwebassets\\images\\save.svg"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\images\\search-list.svg",
+      "PackagePath": "staticwebassets\\images\\search-list.svg"
+    },
+    {
+      "Id": "D:\\Projects\\korzh.com\\dot-net-samples\\AspNetCore\\Razor-Mvc\\Razor.AdvancedSearch\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EqDemo.AspNetCoreRazor.AdvancedSearch.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.EqDemo.AspNetCoreRazor.AdvancedSearch.props",
+      "PackagePath": "build\\EqDemo.AspNetCoreRazor.AdvancedSearch.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.EqDemo.AspNetCoreRazor.AdvancedSearch.props",
+      "PackagePath": "buildMultiTargeting\\EqDemo.AspNetCoreRazor.AdvancedSearch.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.EqDemo.AspNetCoreRazor.AdvancedSearch.props",
+      "PackagePath": "buildTransitive\\EqDemo.AspNetCoreRazor.AdvancedSearch.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

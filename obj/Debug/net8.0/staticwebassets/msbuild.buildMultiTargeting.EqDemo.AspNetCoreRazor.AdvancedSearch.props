@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\EqDemo.AspNetCoreRazor.AdvancedSearch.props" />
+</Project>
