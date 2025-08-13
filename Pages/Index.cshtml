@@ -49,7 +49,7 @@
                     </span>
                 </div>
                 Result
-                <div class="toolbar eqv-export-buttons">
+                <div class="toolbar export-toolbar eqv-export-buttons">
                     Export:
                     <a class="eqjs-export tool-button" href="javascript:void(0)" data-format="pdf">
                         <img class="icon" src="~/images/pdf.svg" alt=""/>
@@ -73,6 +73,9 @@
     <!-- EasyQuery scripts -->
     <script src="https://cdn.korzh.com/eq/7.4.0/eq.enterprise.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        Chart.defaults.animation = false;
+    </script>
 
     <script>
         window.addEventListener('DOMContentLoaded', function () {

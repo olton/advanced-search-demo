@@ -20,6 +20,8 @@
     --widget-background: #fff;
     --widget-color: #161616;
     --wide-mode: 1200px;
+    --main-padding: 8px;
+    --grid-padding: 4px;
 }
 
 *, *::before, *::after {
@@ -228,7 +230,7 @@ body.sb-expand #sidebar {
 
 main {
     grid-area: content;
-    padding: 1.25rem 1.25rem 2rem;
+    padding: var(--main-padding);
     background-color: #fff;
     container-name: content;
     container-type: inline-size;
@@ -242,9 +244,9 @@ main {
 .easyquery-container {
     height: 100%;
     display: grid;
-    gap: 1rem;
+    gap: var(--grid-padding);
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 25% 25% 1fr;
+    grid-template-rows: 35% 35% 1fr;
     grid-template-areas: 
         "entities columns"
         "entities conditions"
@@ -310,9 +312,9 @@ body.expand-result {
     height: 100%;
     
     .widget-title {
-        font-size: 1.25rem;
+        font-size: 1rem;
         font-weight: 600;
-        height: 48px;
+        height: 36px;
         border-bottom: 1px solid var(--app-border-color);
         display: flex;
         align-items: center;
@@ -355,7 +357,8 @@ body.expand-result {
         cursor: pointer;
         transition: background-color 0.2s ease-in-out;
         gap: 6px;
-        height: 36px;
+        height: 30px;
+        width: 30px;
         
         @media (hover: hover) {
             &:hover {
@@ -370,13 +373,15 @@ body.expand-result {
         }
 
         .icon {
-            width: 1.2rem;
-            height: 1.2rem;
-            font-size: 1.2rem;
+            width: 1rem;
+            height: 1rem;
+            font-size: 1rem;
+            object-fit: contain;
             
             * {
                 width: 100%;
                 height: 100%;
+                object-fit: contain;
             }
         }
         
@@ -428,4 +433,9 @@ body.expand-result {
 .disabled {
     opacity: 0.5;
     pointer-events: none;
+}
+
+.export-toolbar {
+    margin: 0 0 0 auto;
+    top: -6px;
 }

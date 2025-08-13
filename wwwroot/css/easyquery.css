@@ -14,3 +14,12 @@
 #EntitiesPanel {
     user-select: none;
 }
+
+.eqjs-column-buttonsBlock, .eqjs-qp-condition-buttonsBlock {
+    background: hsla(0, 0%, 100%, .85);
+}
+
+.eqjs-qc-row .eqjs-qc-buttonsBlock {
+    display: flex!important;
+;
+}
