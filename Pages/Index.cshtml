@@ -107,6 +107,13 @@
                         console.log('Inside list request handler')
                     },
                 },
+                
+                widgets: {
+                    columnsPanel: {
+                        alwaysShowButtons: true,
+                    },
+                },
+                
                 result: {
                     //Show EasyChart
                     showChart: true,
@@ -120,6 +127,15 @@
             const context = view.getContext()
             context.useEnterprise(function () {
                 view.init(viewOptions)
+            })
+
+            context.addEventListener('ready', () => {
+                console.log('EasyQuery is ready')
+            })
+
+            context.addEventListener('syncQuery', ()=> {
+                const qn = document.getElementById('query-name')
+                qn.innerHTML = context.query.getName()
             })
 
             document['AdvancedSearchView'] = view

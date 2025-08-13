@@ -168,15 +168,19 @@ footer {
         border-radius: 50%;
         cursor: pointer;
         box-shadow: 0 0 0 1px #ccc;
-        transition: background-color 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        color: #fff;
+        font-size: 14px;
         @media (hover: hover) {
             &:hover {
                 background-color: #ffffff;
+                color: #191919;
             }
         }
         @media (hover: none) {
             &:active {
                 background-color: #ffffff;
+                color: #191919;
             }
         }
     }
@@ -400,6 +404,11 @@ body.expand-result {
 
 .main-toolbar {
     position: absolute;
+    
+    .tool-button {
+        width: 36px;
+        height: 36px;
+    }
 }
 
 .widget-toolbar {
