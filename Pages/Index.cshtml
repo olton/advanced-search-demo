@@ -17,7 +17,14 @@
 <div class="easyquery-container">
     <div class="entities-panel">
         <div class="widget">
-            <div class="widget-title">Entities</div>
+            <div class="widget-title">
+                Entities
+                <div class="toolbar" style="margin-left: auto;">
+                    <button class="tool-button thin-button" onclick="document.body.classList.add('no-entities')">
+                        <img class="icon close-panel" src="~/images/close.svg" alt=""/>
+                    </button>
+                </div>
+            </div>
             <div class="widget-content">
                 <div id="EntitiesPanel"></div>
             </div>

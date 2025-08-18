@@ -223,6 +223,16 @@ footer {
     }
 }
 
+#ShowEntitiesButton {
+    display: none;
+}
+
+.no-entities {
+    #ShowEntitiesButton {
+        display: flex;
+    }
+}
+
 body.sb-expand #sidebar {
     .sidebar-menu {
         .caption {
@@ -265,13 +275,35 @@ main {
     .expand-vertical-icon { display: flex; }
     .expand-horizontal-icon { display: none; }
     
-    @container (min-width: 1300px) {
-        grid-template-columns: 300px auto 50%;
+    @container (min-width: 1400px) {
+        grid-template-columns: 300px auto auto;
         grid-template-rows: 50% 50% 1fr;
         grid-template-areas: 
             "entities columns result"
             "entities conditions result"
     } 
+}
+
+.no-entities {
+    .entities-panel {
+        display: none;
+    }
+    .easyquery-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "columns"
+            "conditions"
+            "result";
+
+        @container (min-width: 1400px) {
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+            "columns result"
+            "conditions result"
+        }
+    }
 }
 
 .easyquery-container {
@@ -344,7 +376,7 @@ body.expand-result {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 0;
     background-color: var(--widget-background);
     gap: 2rem;
     position: relative;
@@ -446,3 +478,4 @@ body.expand-result {
 .export-toolbar {
     margin: 0 0 0 auto;
 }
+

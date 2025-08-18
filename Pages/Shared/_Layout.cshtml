@@ -17,6 +17,11 @@
     <div class="app-title">Advanced Search Demo</div>
     <div class="toolbar main-toolbar">
         <div class="toolbar-group">
+            <button id="ShowEntitiesButton" class="tool-button" title="Show Entities Panel" aria-label="Show Entities Panel" onclick="document.body.classList.remove('no-entities')">
+                <img class="icon" src="~/images/tree-view.svg" alt="Show Entities Panel"/>
+            </button>
+        </div>
+        <div class="toolbar-group">
             <button class="tool-button" id="NewQueryButton" title="New Query" aria-label="New Query">
                 <img class="icon" src="~/images/new.svg" alt="New Query"/>
             </button>
@@ -45,7 +50,7 @@
         </div>
     </div>
     <div class="query-name">
-        [ <div id="query-name">New Query</div> ]
+        <div id="query-name">New Query</div>
     </div>
 </header>
 
