@@ -38,12 +38,11 @@ body {
     min-block-size: 100vh;
     
     display: grid;
-    grid-template-rows: var(--header-height-long) 1fr var(--footer-height);
+    grid-template-rows: var(--header-height-long) 1fr;
     grid-template-columns: var(--sidebar-width) 1fr;
     grid-template-areas: 
         "sidebar header"
-        "sidebar content"
-        "sidebar footer";
+        "sidebar content";
     
     transition: grid-template-columns 0.3s ease-in-out;
 }
@@ -101,7 +100,7 @@ header {
 
 @media screen and (min-width: 1120px) {
     body {
-        grid-template-rows: var(--header-height) 1fr var(--footer-height);
+        grid-template-rows: var(--header-height) 1fr;
     }
     header {
         flex-flow: row nowrap;
@@ -249,9 +248,9 @@ main {
     container-name: content;
     container-type: inline-size;
     overflow-y: auto;
-    height: calc(100vh - var(--header-height-long) - var(--footer-height));
+    height: calc(100vh - var(--header-height-long));
     @media (min-width: 1120px) {
-        height: calc(100vh - var(--header-height) - var(--footer-height));
+        height: calc(100vh - var(--header-height));
     }
 }
 
