@@ -19,6 +19,21 @@
     background: hsla(0, 0%, 100%, .85);
 }
 
-/*.eqjs-qc-row .eqjs-qc-buttonsBlock {*/
-/*    display: flex!important;*/
-/*}*/
+.eqv-export-buttons {
+    margin-left: auto;
+    gap: 4px;
+}
+
+.eqjs-export {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+        inset: 4px;
+    }
+}

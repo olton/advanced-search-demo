@@ -8,13 +8,17 @@
     <title>@(ViewData["IsIndexPage"] == null ? @ViewData["Title"] + " - " : "")EasyQuery library samples</title>
 
     <link rel="stylesheet" href="~/css/index.css"/>
+    <link rel="stylesheet" href="~/css/layout.css"/>
 
     @RenderSection("Styles", required: false)
 </head>
 <body>
 
 <header id="app-bar">
-    <div class="app-title">Advanced Search Demo</div>
+    <div class="app-title">
+        <button id="showSidebarButton" class="transform-button" onclick="toggleSidebar()"><span></span></button>
+        Advanced Search Demo
+    </div>
     <div class="toolbar main-toolbar">
         <div class="toolbar-group">
             <button id="ShowEntitiesButton" class="tool-button" title="Show Entities Panel" aria-label="Show Entities Panel" onclick="document.body.classList.remove('no-entities')">
@@ -56,6 +60,7 @@
 
 <aside id="sidebar">
     <div class="logo">
+        <button class="close-sidebar-btn" onclick="toggleSidebar()">&times;</button>
         <img src="~/images/search-list.svg" alt="logo"/>
     </div>
     <button type="button" class="btn-toggle-sidebar" onclick="document.body.classList.toggle('sb-expand');">
@@ -83,6 +88,12 @@
 </main>
 
 <script src="~/js/index.js"></script>
+<script>
+    function toggleSidebar() {
+        document.querySelector("#showSidebarButton").classList.toggle('transform');
+        document.body.classList.toggle('sb-expand');
+    }
+</script>
 
 @RenderSection("Scripts", required: false)
 
