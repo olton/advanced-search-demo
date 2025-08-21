@@ -37,3 +37,11 @@
         inset: 4px;
     }
 }
+
+.eqjs-mobile.eqjs-menu-rootLevel {
+    inset: 0!important;
+}
+
+.eqjs-menu-scrollDiv {
+    max-height: 100vh!important;
+}

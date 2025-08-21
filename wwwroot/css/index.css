@@ -82,6 +82,7 @@ header {
         font-weight: 500;
         flex-flow: row nowrap;
         margin-left: auto;
+        margin-bottom: 10px;
     }
 
     .main-toolbar {
@@ -94,6 +95,7 @@ header {
     @media (min-width: 1200px) {
         .query-name {
             flex-basis: auto;
+            margin-bottom: 0;
         }
         
         .main-toolbar {

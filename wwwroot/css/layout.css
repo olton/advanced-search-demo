@@ -95,7 +95,7 @@ body {
 
 .easyquery-container {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 38% 38% 24%;
     grid-template-areas: 
             "columns"
             "conditions"
