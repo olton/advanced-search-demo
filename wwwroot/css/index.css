@@ -62,7 +62,7 @@ header {
     background-color: var(--header-background);
     color: var(--header-color);
     border-bottom: 1px solid var(--app-border-color);
-    gap: 1rem;
+    /*gap: 1rem;*/
     position: relative;
     
     .app-title {
@@ -90,6 +90,11 @@ header {
         flex: 0 0 100%;
         align-items: center;
         justify-content: center;
+        border-top: 1px solid var(--app-border-color);
+        border-bottom: 1px solid var(--app-border-color);
+        padding: 10px 0;
+        gap: 10px;
+        position: relative;
     }
     
     @media (min-width: 1200px) {
@@ -103,6 +108,9 @@ header {
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+            border-top: none;
+            border-bottom: none;
+            padding: 0;
             
             .tool-button {
                 width: 36px;
