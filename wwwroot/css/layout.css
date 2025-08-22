@@ -146,3 +146,16 @@ body {
         }
     }
 }
+
+body.expand-result {
+    .easyquery-container {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "result";
+
+        .entities-panel, .columns-panel, .conditions-panel {
+            display: none;
+        }
+    }
+}
