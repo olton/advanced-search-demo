@@ -8,7 +8,7 @@
     --sidebar-width: 5rem;
     --sidebar-width-expand: 12.5rem;
     --header-height: 70px;
-    --header-height-long: 130px;
+    --header-height-long: 78px;
     --footer-height: 50px;
     --sidebar-background: #29201d;
     --sidebar-color: #fff;
@@ -46,7 +46,6 @@ header {
     padding: 0 10px;
     background-color: var(--header-background);
     color: var(--header-color);
-    border-bottom: 1px solid var(--app-border-color);
     position: relative;
     
     .app-title {
@@ -66,25 +65,34 @@ header {
         font-weight: 500;
         flex-flow: row nowrap;
         margin-left: auto;
-        margin-bottom: 10px;
+        border: 1px dashed #ccc;
+        padding: 2px;
+        border-radius: 6px;
     }
 
     .main-toolbar {
         display: flex;
-        flex: 0 0 100%;
+        flex: 0 0 auto;
         align-items: center;
         justify-content: center;
-        border-top: 1px solid var(--app-border-color);
-        border-bottom: 1px solid var(--app-border-color);
         padding: 10px 0;
-        gap: 10px;
+        gap: 2px;
         position: relative;
+        margin-left: auto;
+    }
+    
+    @media (min-width: 768px) {
+        .main-toolbar {
+            gap: 10px;
+        }
     }
     
     @media (min-width: 1200px) {
+        border-bottom: 1px solid var(--app-border-color);
         .query-name {
             flex-basis: auto;
             margin-bottom: 0;
+            border: none;
         }
         
         .main-toolbar {
@@ -92,8 +100,6 @@ header {
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            border-top: none;
-            border-bottom: none;
             padding: 0;
             
             .tool-button {
@@ -206,6 +212,12 @@ header {
         
         .caption {
             display: none;
+        }
+        
+        .separator {
+            height: 1px;
+            background-color: #6a6a6a;
+            margin: 0.5rem 0;
         }
     }
 }
@@ -425,4 +437,8 @@ main {
     @media (min-width: 1200px) {
         display: none;
     }
+}
+
+.no-wrap {
+    white-space: nowrap;
 }

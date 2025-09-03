@@ -68,18 +68,71 @@
     </button>
 
     <ul class="sidebar-menu">
-        <li title="Dashboard"><a href="/">
+        <li title="New Query" id="new-query-menu-item" class="command-item">
+            <a href="#" onclick="clickButton('NewQueryButton')" class="no-wrap">
+                <span class="icon"><img src="~/images/new-light.svg" alt="new image"/></span>
+                <span class="caption">New Query</span>
+            </a>
+        </li>
+        <!--
+        <li title="Load Query" id="load-query-menu-item" class="command-item">
+            <a href="#" onclick="clickButton('LoadQueryButton')" class="no-wrap">
+                <span class="icon"><img src="~/images/open-light.svg" alt="load image"/></span>
+                <span class="caption">Load Query</span>
+            </a>
+        </li>
+        -->
+        <li title="Clear Query" id="clear-query-menu-item" class="command-item">
+            <a href="#" onclick="clickButton('ClearQueryButton')" class="no-wrap">
+                <span class="icon"><img src="~/images/clear-light.svg" alt="clear image"/></span>
+                <span class="caption">Clear Query</span>
+            </a>
+        </li>
+        <li title="Save Query" id="save-query-menu-item" class="command-item">
+            <a href="#" onclick="clickButton('SaveQueryButton')" class="no-wrap">
+                <span class="icon"><img src="~/images/save-light.svg" alt="save image"/></span>
+                <span class="caption">Save Query</span>
+            </a>
+        </li>
+        <li title="Save Query As..." id="save-as-query-menu-item" class="command-item">
+            <a href="#" onclick="clickButton('CopyQueryButton')" class="no-wrap">
+                <span class="icon"><img src="~/images/save-as-light.svg" alt="save as image"/></span>
+                <span class="caption">Save Query As...</span>
+            </a>
+        </li>
+        <li title="Remove Query From Storage" id="delete-query-menu-item" class="command-item">
+            <a href="#" onclick="clickButton('RemoveQueryButton')" class="no-wrap">
+                <span class="icon"><img src="~/images/remove-light.svg" alt="remove image"/></span>
+                <span class="caption">Remove Query</span>
+            </a>
+        </li>
+        <!--
+        <li title="Fetch Data" id="fetch-query-menu-item" class="command-item">
+            <a href="#" onclick="clickButton('ExecQueryButton')" class="no-wrap">
+                <span class="icon"><img src="~/images/run-light.svg" alt="run image"/></span>
+                <span class="caption">Fetch Data</span>
+            </a>
+        </li>
+        -->
+        <li class="separator"></li>
+        <li title="Dashboard">
+            <a href="/">
                 <span class="icon"><img src="~/images/dashboard.svg" alt="dashboard"/></span>
                 <span class="caption">Dashboard</span>
-            </a></li>
-        <li title="Privacy"><a href="/privacy">
+            </a>
+        </li>
+        <li title="Privacy">
+            <a href="/privacy">
                 <span class="icon"><img src="~/images/privacy.svg" alt="dashboard"/></span>
                 <span class="caption">Privacy</span>
-            </a></li>
-        <li title="About"><a href="/about">
+            </a>
+        </li>
+        <li title="About">
+            <a href="/about">
                 <span class="icon"><img src="~/images/about.svg" alt="dashboard"/></span>
                 <span class="caption">About</span>
-            </a></li>
+            </a>
+        </li>
     </ul>
 </aside>
 
@@ -92,6 +145,11 @@
     function toggleSidebar() {
         document.querySelector("#showSidebarButton").classList.toggle('transform');
         document.body.classList.toggle('sb-expand');
+    }
+    
+    function clickButton(id) {
+        const btn = document.querySelector(`#${id}`)
+        btn.click()
     }
 </script>
 
