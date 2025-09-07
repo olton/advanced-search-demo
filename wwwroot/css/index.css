@@ -442,3 +442,7 @@ main {
 .no-wrap {
     white-space: nowrap;
 }
+
+.columns-panel, .conditions-panel {
+    padding-bottom: 6px!important;
+}

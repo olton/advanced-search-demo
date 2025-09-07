@@ -1,6 +1,8 @@
 .eqjs-ep-panel, .eqjs-qc-panel, .eqjs-qp-panel {
-    background-color: var(--widget-background);
-    color: var();
+    /*background-color: var(--widget-background);*/
+    /*color: var();*/
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 .eqjs-qp-grelement {
@@ -44,4 +46,18 @@
 
 .eqjs-menu-scrollDiv {
     max-height: 100vh!important;
+}
+
+.eqjs-column-buttonsBlock {
+    right: 10px!important;
+}
+
+.eqjs-buttons-in-block-3.eqjs-qc-row[data-show-buttons] {
+     padding-right: 0; 
+}
+
+.eqjs-chart-content {
+    canvas {
+        width: 100%!important;
+    }
 }

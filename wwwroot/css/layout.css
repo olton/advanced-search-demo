@@ -116,7 +116,7 @@ body {
     }
     
     @media (min-width: 1400px) {
-        grid-template-columns: 300px auto auto;
+        grid-template-columns: 300px 35% 1fr;
         grid-template-rows: 50% 50% 1fr;
         grid-template-areas: 
             "entities columns result"
@@ -137,8 +137,8 @@ body {
             "conditions"
             "result";
 
-        @container (min-width: 1400px) {
-            grid-template-columns: auto auto;
+        @media (min-width: 1400px) {
+            grid-template-columns: 40% 1fr;
             grid-template-rows: auto auto;
             grid-template-areas: 
             "columns result"
