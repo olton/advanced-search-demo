@@ -107,7 +107,7 @@ body {
             display: block;
         }
         
-        grid-template-columns: 300px 1fr;
+        grid-template-columns: var(--entities-panel-size) 1fr;
         grid-template-rows: 35% 35% 1fr;
         grid-template-areas: 
         "entities columns"
@@ -116,7 +116,7 @@ body {
     }
     
     @media (min-width: 1400px) {
-        grid-template-columns: 300px 35% 1fr;
+        grid-template-columns: var(--entities-panel-size) 35% 1fr;
         grid-template-rows: 50% 50% 1fr;
         grid-template-areas: 
             "entities columns result"

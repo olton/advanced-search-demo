@@ -22,6 +22,7 @@
     --wide-mode: 1200px;
     --main-padding: 8px;
     --grid-padding: 4px;
+    --entities-panel-size: 220px;
 }
 
 *, *::before, *::after {
