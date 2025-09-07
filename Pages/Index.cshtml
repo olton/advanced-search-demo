@@ -86,6 +86,8 @@
 
     <script>
         window.addEventListener('DOMContentLoaded', function () {
+            const showPanelButtons = false
+            
             // Initialize the EasyQuery application
             const viewOptions = {
                 //Load model on start
@@ -117,14 +119,14 @@
                 
                 widgets: {
                     columnsPanel: {
-                        alwaysShowButtons: false,
+                        alwaysShowButtons: showPanelButtons,
                     },
                     entitiesPanel: {
                         
                     },
                     queryPanel: {
-                        alwaysShowButtonsInGroups: false,
-                        alwaysShowButtonsInConditions: false,
+                        alwaysShowButtonsInGroups: showPanelButtons,
+                        alwaysShowButtonsInConditions: showPanelButtons,
                     }
                 },
                 

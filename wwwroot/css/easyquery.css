@@ -1,3 +1,8 @@
+.eqjs-column-buttonsBlock,
+.eqjs-qp-condition-buttonsBlock {
+    display: none;
+}
+
 .eqjs-ep-panel, .eqjs-qc-panel, .eqjs-qp-panel {
     /*background-color: var(--widget-background);*/
     /*color: var();*/
