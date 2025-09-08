@@ -245,12 +245,6 @@ main {
 }
 
 .easyquery-container {
-    height: 100%;
-    padding: 5px;
-    display: grid;
-    gap: var(--grid-padding);
-    /*overflow-y: auto;*/
-    
     & > div {
         padding: 0 6px;
         border: 1px solid var(--app-border-color);
@@ -272,6 +266,7 @@ main {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
     
     .widget-title {
         font-size: 1rem;
@@ -447,4 +442,9 @@ main {
 
 .columns-panel, .conditions-panel {
     padding-bottom: 6px!important;
+}
+
+.result-panel {
+    width: 100%;
+    overflow-x: auto;
 }
