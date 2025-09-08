@@ -66,3 +66,16 @@
         width: 100%!important;
     }
 }
+
+.eqjs-qp-row.eqjs-mobile {
+    padding: 0 10px;
+    margin: 4px 4px 0 4px;
+}
+
+.eqjs-qp-row-group.eqjs-mobile {
+    padding: 4px 10px!important;
+}
+
+.eqjs-qc-row.eqjs-mobile {
+    border-style: solid;
+}
