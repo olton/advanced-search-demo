@@ -94,24 +94,20 @@ body {
 }
 
 .easyquery-container {
-    height: 100%;
+    height: auto;
     padding: 5px;
-    display: grid;
+    display: flex;
     flex-direction: column;
-    gap: var(--grid-padding);
     overflow-y: auto;
-
-    grid-template-columns: 1fr;
-    grid-template-rows: 40% 40% auto;
-    grid-template-areas: 
-            "columns"
-            "conditions"
-            "result";
+    gap: 1rem;
 
     @media (min-width: 768px) {
+        gap: var(--grid-padding);
+        display: grid;
+        height: 100%;
         overflow-y: hidden;
         grid-template-columns: 1fr;
-        grid-template-rows: 38% 38% 24%;
+        grid-template-rows: 40% 40% auto;
         grid-template-areas: 
             "columns"
             "conditions"

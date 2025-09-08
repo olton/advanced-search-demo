@@ -446,5 +446,5 @@ main {
 
 .result-panel {
     width: 100%;
-    overflow-x: auto;
+    overflow: auto;
 }
